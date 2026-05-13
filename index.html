@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MY Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+    }
+
+    /* Navbar */
+
+    header{
+      width:100%;
+      padding:20px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:#111827;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:#38bdf8;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      transition:0.3s;
+      font-size:15px;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    /* Hero */
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+      background:linear-gradient(to right,#0f172a,#1e293b);
+    }
+
+    .hero-content h1{
+      font-size:60px;
+      margin-bottom:10px;
+    }
+
+    .hero-content span{
+      color:#38bdf8;
+    }
+
+    .hero-content h3{
+      font-weight:400;
+      margin-bottom:20px;
+      color:#cbd5e1;
+    }
+
+    .hero-content p{
+      max-width:700px;
+      margin:auto;
+      line-height:1.8;
+      color:#94a3b8;
+    }
+
+    .buttons{
+      margin-top:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 28px;
+      margin:10px;
+      background:#38bdf8;
+      color:black;
+      text-decoration:none;
+      border-radius:10px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:white;
+      transform:translateY(-3px);
+    }
+
+    /* Sections */
+
+    section{
+      padding:90px 10%;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:40px;
+      margin-bottom:50px;
+      color:#38bdf8;
+    }
+
+    /* About */
+
+    .about{
+      text-align:center;
+      max-width:900px;
+      margin:auto;
+      line-height:1.8;
+      color:#cbd5e1;
+    }
+
+    /* Skills */
+
+    .skills-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+    }
+
+    .skill-card{
+      background:#1e293b;
+      padding:30px;
+      border-radius:16px;
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .skill-card:hover{
+      transform:translateY(-8px);
+      background:#334155;
+    }
+
+    .skill-card h3{
+      margin-top:15px;
+      color:#38bdf8;
+    }
+
+    /* Projects */
+
+    .projects-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .project-card{
+      background:#1e293b;
+      padding:25px;
+      border-radius:16px;
+      transition:0.3s;
+    }
+
+    .project-card:hover{
+      transform:scale(1.03);
+    }
+
+    .project-card h3{
+      color:#38bdf8;
+      margin-bottom:15px;
+    }
+
+    .project-card p{
+      color:#cbd5e1;
+      line-height:1.7;
+    }
+
+    /* Education */
+
+    .education-card{
+      background:#1e293b;
+      padding:30px;
+      border-radius:16px;
+      max-width:700px;
+      margin:auto;
+      text-align:center;
+    }
+
+    .education-card h3{
+      color:#38bdf8;
+      margin-bottom:15px;
+    }
+
+    /* Contact */
+
+    .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      margin:12px 0;
+      color:#cbd5e1;
+      font-size:17px;
+    }
+
+    footer{
+      text-align:center;
+      padding:25px;
+      background:#111827;
+      color:#94a3b8;
+    }
+
+    /* Responsive */
+
+    @media(max-width:768px){
+
+      .hero-content h1{
+        font-size:40px;
+      }
+
+      nav{
+        display:none;
+      }
+
+      .section-title{
+        font-size:32px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+
+  <header>
+
+    <div class="logo">CSE Portfolio</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </header>
+
+  <!-- Hero -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <h1>Hi, I'm <span>MD. ASLAM PARVEJ MUNNA</span></h1>
+
+      <h3>CSE Student | Web Developer | Programmer</h3>
+
+      <p>
+        Passionate Computer Science student focused on web development,
+        programming and modern technology. I love building beautiful,
+        responsive and user-friendly websites and applications.
+      </p>
+
+      <div class="buttons">
+        <a href="#" class="btn">Download CV</a>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- About -->
+
+  <section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+
+      <p>
+        I am a Computer Science & Engineering student passionate about
+        software development, web technologies and problem solving.
+        I enjoy learning new technologies and building real-world projects.
+        My goal is to become a professional software engineer and contribute
+        to innovative technology solutions.
+      </p>
+      <p align="center"><img src="aslam.jpg" height="500" border=""5"></p>
+    </div>
+
+  </section>
+
+  <!-- Skills -->
+
+  <section id="skills">
+
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills-container">
+
+      <div class="skill-card">
+        <h3>HTML5</h3>
+      </div>
+
+      <div class="skill-card">
+        <h3>CSS3</h3>
+      </div>
+
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+      </div>
+
+      <div class="skill-card">
+        <h3>C Programming</h3>
+      </div>
+
+      <div class="skill-card">
+        <h3>C++</h3>
+      </div>
+
+      <div class="skill-card">
+        <h3>Python</h3>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Projects -->
+
+  <section id="projects">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-container">
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+
+        <p>
+          A modern responsive personal portfolio website using HTML and CSS.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Calculator App</h3>
+
+        <p>
+          A functional calculator application using JavaScript.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Student Management System</h3>
+
+        <p>
+          A simple student data management system project.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Education -->
+
+  <section id="education">
+
+    <h2 class="section-title">Education</h2>
+
+    <div class="education-card">
+
+      <h3>BSc in Computer Science & Engineering</h3>
+
+      <p>Independent University Bangladesh-IUB</p>
+
+      <p>Session: 2017-2021</p>
+
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+
+  <section id="contact">
+
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact">
+
+      <p>Email: aslamparvejmunna@gmail.com</p>
+
+      <p>Phone: +8801798-923960</p>
+
+      <p>GitHub: github.com/yourgithub</p>
+
+      <p>LinkedIn: linkedin.com/in/yourprofile</p>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+
+    <p>© 2017 CSE Student Portfolio | All Rights Reserved</p>
+
+  </footer>
+
+</body>
+</html>
